@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <style type="text/css">
+    *{
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+
+}
+
+.header{ 
+  background-image:url("index2.jpg") ;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+} 
+
+
+.header ul{
+  float:right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+.header ul li {
+  display:inline-block;
+}
+
+.header ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+ }
+
+.header ul li a:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.header ul li.active a{
+  background-color: #fff;
+  color: #000;
+}
+
+.logo img{
+  float:  left;
+  width: 150px;
+  height: auto;
+}
+
+.main{
+  max-width: 1200px;
+  margin: auto ;
+}
+
+.title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.title h1{
+  color: #fff;
+  font-size: 70px;
+}
+
+.button{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.input_div .input{
+  padding: 0.5rem 1rem;
+  height: 50px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  width: 450px;
+  font-size: 1.15rem;
+  margin: 0.25rem;
+  border-radius: 25px;
+}
+
+.addButton{
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  color: blue;
+  margin: 0.25rem;
+  background-color:#fff; 
+  corsor: pointer;
+}
+
+.addButton:hover{
+  opacity: 0.7;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.item{
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 4px solid #fff;
+}
+
+.item_input{
+  background-color: none;
+  outline: none;
+  color: black;
+  border: none;
+  font-size: 1.4rem;
+}
+
+.editButton{
+  font-size: 1.4rem;
+  margin: 0 0.75rem;
+  font-family: 'Hind' sans-serif; 
+  background: none;
+  outline: none;
+  color: blue;
+  border: none;
+}
+
+.removeButton{
+  font-size: 1.4rem;
+  margin: 0 0.75rem;
+  font-family: 'Hind' sans-serif; 
+  background: none;
+  outline: none;
+  color: #fff;
+  border: none;
+}
+   </style>
+  </head>
+  <body>
+    <div class = "main">
+      <div class = "logo">
+          <img src="logo.png">
+      </div>
+
+    	<div class="header">
+    		<ul>
+    			<li class="active"><a  href="game.html">Home</a></li>
+    			<li><a href="Forms.html">Forms</a></li>
+    			<li><a href="#">Comic</a></li>
+    		</ul>
+    	</div>
+    </div>
+
+  <div class="title">
+    <h1><span class="styling">Forms</span></h1>
+    <div class="input_div">
+      <input class="input" type="text" placeholder="How was the exchange semester...">
+      <button class="addButton"><i class="fas fa-plus"></i>></button>
+    </div>
+    <div class="container">
+      <div class="item">
+        <input type="text" class="item_input" value="Fun" disabled>
+        <button class="editButton">Edit</button>
+        <button class="removeButton">Remove</button>
+      </div>
+      <!--
+      <div class="item">
+        <input type="text" class="item_input" value="Fun" disabled>
+        <button class="editButton">Edit</button>
+        <button class="removeButton">Remove</button>
+      </div>
+    </div>
+  </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
